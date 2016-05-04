@@ -14,6 +14,7 @@
   </head>
 
   <body>
+
     <header>
       <nav>
         <div class="nav-wrapper">
@@ -31,26 +32,82 @@
         <div class="header-inset">
           <h1>Discovering beer</h1>
           <h1>just got easier.</h1>
-          <a class="waves-effect waves-blue btn-flat">Learn More</a>
+          <a class="waves-effect waves-blue btn">Learn More</a>
         </div>
       </div>
     </header>
-    <main>
 
-    </main>
-    <footer class="page-footer">
-      <!-- <div class="container"> -->
+    <main>
+      <div class="container">
+
         <div class="row">
-          <div class="col l6 s12">
-            <p>12345 Fremont Ave., Suite 1001</p>
-            <p>Seattle, WA 98100</p>
-            <p>Copyright &copy;2013 Beer'd, Inc.</p>
+          <div class="col s12 m6 l6">
+            <section class="welcome-msg">
+              <h3>You're a couple moments away from getting a beer.</h3>
+              <p class="flow-text">Let's start with some basics. By letting us know a bit about your tastebuds, we'll be able to start gathering the information we need in order to get you a beer. We may even be able to introduce you to something you've never tried before but will love.</p>
+              <p class="flow-text">We're a company who likes beer. We help beer lovers like you find your favorite beers and explore new brews, without the hassle and wait times of your local pub. And since we sell beer directly, we also save you money.</p>
+            </section>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <img class="right" src="_assets/img/footer-graphic.png">
+          <div class="col s12 m6 l6">
+            <section class="survey">
+              <div class="fav-beer">
+                <label for="fav_beer" class="flow-text">What's your favorite beer?</label>
+                <input placeholder="Mac &amp; Jacks" id="fav_beer" type="text" class="validate flow-text">
+              </div>
+              <div class="beer-count">
+                <label class="flow-text">How many times a week do you drink beer?</label>
+                <select>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1-2</option>
+                  <option value="2">3-4</option>
+                  <option value="3">5+</option>
+                </select>
+              </div>
+              <a class="waves-effect waves-red btn btn-red">Get Advice</a><span></span><a class="waves-effect waves-blue btn">Get a Beer</a>
+            </section>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
+
+        <div class="row">
+          <div class="center col s12 m12 l12 about-us">
+            <section class="about-us">
+              <div class="container">
+                <h2>What makes us different?</h2>
+                <h3>WE'RE FOCUSED ON THE NEEDS OF BEER LOVERS.</h3>
+                <section class="direct-to-you col s12 m6 l4">
+                  <img src="_assets/icons/icon-direct-to-you.png">
+                </section>
+                <section class="pub-less col s12 m6 l4">
+                  <img src="_assets/icons/icon-pub-less.png">
+
+                </section>
+                <section class="peace-of-mind col s12 m6 l4">
+                  <img src="_assets/icons/icon-peace-of-mind.png">
+
+                </section>
+                <section class="expert-advice col s12 m6 l4">
+                  <img src="_assets/icons/icon-expert-advice.png">
+
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="row">
+        <div class="col l6 s12">
+          <p>12345 Fremont Ave., Suite 1001</p>
+          <p>Seattle, WA 98100</p>
+          <p>Copyright &copy;2013 Beer'd, Inc.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <img class="right" src="_assets/img/footer-graphic.png">
+        </div>
+      </div>
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>

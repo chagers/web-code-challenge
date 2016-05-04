@@ -1,15 +1,54 @@
+/*Small screens are defined as having a max-width of 600px
+Medium screens are defined as having a max-width of 992px
+Large screen are defined as having a min-width of 993px*/
+
 $primary-font: OpenSansRegular;
 $bold-font: OpenSansSemibold;
 $logo-font: PacificoRegular;
 $nav-foot-pad: 1em 5em;
-
+$btn-blue: #1160AD;
+$btn-red: #EA431F;
+$small-screen-min: 0;
+$med-screen-min: 601px;
+$large-screen-min: 993px;
 
 
 body {
   font-family: $primary-font;
-  background-color: teal;
 }
 
+@media screen and (min-width: $small-screen-min) {
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: $med-screen-min) {
+  h1, h2 {
+    font-size: 3.2em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: $large-screen-min) {
+  .container {
+    width: 90%;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+  margin-top: 2em;
+  text-transform: none;
+}
 
 nav {
   font-family: OpenSansLight;
@@ -39,13 +78,47 @@ nav {
   background-size: contain;
   margin-top: -6em;
   width: 100%;
+    .header-inset {
+      position: relative;
+      margin: 0 auto;
+      padding: 8em 0 0 5em;
+      color: #FFFFFF;
+      font-family: $bold-font;
+        .btn {
+          background-color: $btn-blue;
+        }
+  }
 }
-.header-inset {
-  position: relative;
-  margin: 0 auto;
-  padding: 8em 0 0 5em;
-  color: #FFFFFF;
-  font-family: $bold-font;
+
+.survey {
+  margin-top: 1.46em;
+  input {
+    width: 100%;
+  }
+  label {
+    font-weight: bold;
+    color: #000000;
+  }
+  .beer-count {
+    margin-top: 1em;
+  }
+  select {
+    display: initial;
+  }
+  .btn {
+    background-color: $btn-blue;
+  }
+  .btn-red {
+    background-color: $btn-red;
+  }
+  span {
+    padding: 1em;
+  }
+}
+
+.about-us {
+  background-color: #ECEBEB;
+  width: 100%;
 }
 
 footer {

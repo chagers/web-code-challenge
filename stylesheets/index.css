@@ -1,6 +1,31 @@
+/*Small screens are defined as having a max-width of 600px
+Medium screens are defined as having a max-width of 992px
+Large screen are defined as having a min-width of 993px*/
 body {
-  font-family: OpenSansRegular;
-  background-color: teal; }
+  font-family: OpenSansRegular; }
+
+@media screen and (min-width: 0) {
+  h1, h2, h3 {
+    font-size: 2em; }
+
+  .container {
+    width: 95%; } }
+@media screen and (min-width: 601px) {
+  h1, h2 {
+    font-size: 3.2em; }
+
+  h3 {
+    font-size: 2.5em; }
+
+  .container {
+    width: 90%; } }
+@media screen and (min-width: 993px) {
+  .container {
+    width: 90%; } }
+.btn {
+  border-radius: 25px;
+  margin-top: 2em;
+  text-transform: none; }
 
 nav {
   font-family: OpenSansLight;
@@ -25,13 +50,36 @@ nav {
   background-size: contain;
   margin-top: -6em;
   width: 100%; }
+  .hero-image .header-inset {
+    position: relative;
+    margin: 0 auto;
+    padding: 8em 0 0 5em;
+    color: #FFFFFF;
+    font-family: OpenSansSemibold; }
+    .hero-image .header-inset .btn {
+      background-color: #1160AD; }
 
-.header-inset {
-  position: relative;
-  margin: 0 auto;
-  padding: 8em 0 0 5em;
-  color: #FFFFFF;
-  font-family: OpenSansSemibold; }
+.survey {
+  margin-top: 1.46em; }
+  .survey input {
+    width: 100%; }
+  .survey label {
+    font-weight: bold;
+    color: #000000; }
+  .survey .beer-count {
+    margin-top: 1em; }
+  .survey select {
+    display: initial; }
+  .survey .btn {
+    background-color: #1160AD; }
+  .survey .btn-red {
+    background-color: #EA431F; }
+  .survey span {
+    padding: 1em; }
+
+.about-us {
+  background-color: #ECEBEB;
+  width: 100%; }
 
 footer {
   padding: 1em 5em; }
