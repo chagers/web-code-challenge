@@ -1,27 +1,67 @@
 /*Small screens are defined as having a max-width of 600px
 Medium screens are defined as having a max-width of 992px
 Large screen are defined as having a min-width of 993px*/
-body {
+html {
   font-family: OpenSansRegular; }
 
 @media screen and (min-width: 0) {
-  h1, h2, h3 {
+  html {
+    font-size: 14px; }
+
+  h1 {
     font-size: 2em; }
 
-  .container {
-    width: 95%; } }
-@media screen and (min-width: 601px) {
-  h1, h2 {
-    font-size: 3.2em; }
+  h2 {
+    font-size: 1.8em; }
 
   h3 {
-    font-size: 2.5em; }
+    font-size: 1.6em; }
 
-  .container {
-    width: 90%; } }
+  h4 {
+    font-size: 1.4em; }
+
+  h5 {
+    font-size: 1.2em; }
+
+  h6 {
+    font-size: 1em; }
+
+  .footer-graphic {
+    float: left;
+    padding-bottom: .5em; } }
+@media screen and (min-width: 601px) {
+  html {
+    font-size: 16px; }
+
+  h1 {
+    font-size: 3em; }
+
+  h2 {
+    font-size: 2.8em; }
+
+  h3 {
+    font-size: 2.6em; }
+
+  .footer-graphic {
+    float: right; } }
 @media screen and (min-width: 993px) {
-  .container {
-    width: 90%; } }
+  html {
+    font-size: 18px; }
+
+  h1 {
+    font-size: 3.5em; }
+
+  h2 {
+    font-size: 3.1em; }
+
+  h3 {
+    font-size: 2.7em; }
+
+  .footer-graphic {
+    float: right; } }
+.container {
+  width: 90%; }
+
 .btn {
   border-radius: 25px;
   margin-top: 2em;
@@ -43,17 +83,18 @@ nav {
     height: 6em;
     padding: 1em 5em;
     width: 100%; }
+  nav .button-collapse {
+    margin-left: -4em; }
 
 .hero-image {
-  height: 30em;
-  background-image: url("../_assets/img/hero_edited.jpg");
-  background-size: contain;
-  margin-top: -6em;
-  width: 100%; }
+  background-image: url("../_assets/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10em; }
   .hero-image .header-inset {
     position: relative;
     margin: 0 auto;
-    padding: 8em 0 0 5em;
+    padding: 12em 0 3em;
     color: #FFFFFF;
     font-family: OpenSansSemibold; }
     .hero-image .header-inset .btn {
@@ -63,16 +104,23 @@ nav {
   margin-top: 1.46em; }
   .survey input {
     width: 100%; }
+  .survey input[type=text] {
+    background-color: #ECEBEB;
+    border-bottom-width: 0;
+    text-indent: 0.5em;
+    border-radius: 5px; }
   .survey label {
     font-weight: bold;
     color: #000000; }
   .survey .beer-count {
     margin-top: 1em; }
   .survey select {
-    display: initial; }
+    display: initial;
+    background-color: #ECEBEB;
+    color: #C7C7C7; }
   .survey .btn {
     background-color: #1160AD; }
-  .survey .btn-red {
+  .survey .advice-button {
     background-color: #EA431F; }
   .survey span {
     padding: 1em; }
@@ -80,11 +128,31 @@ nav {
 .about-us {
   background-color: #ECEBEB;
   width: 100%; }
+  .about-us .btn-red {
+    background-color: #EA431F; }
+  .about-us .about-btn {
+    padding-bottom: 4em; }
+  .about-us h2 {
+    padding-top: 1em; }
+  .about-us h6 {
+    padding-bottom: 1em; }
+  .about-us p {
+    font-family: OpenSansLightItalic; }
+  .about-us span {
+    font-family: OpenSansLight; }
 
 footer {
-  padding: 1em 5em; }
+  color: #ECEBEB;
+  padding-bottom: 1em; }
+  footer address {
+    font-style: normal; }
+  footer .copyright {
+    color: #595B5C; }
+  footer .footer-graphic {
+    padding-top: 1em; }
 
 footer.page-footer {
-  background-color: #313132; }
+  background-color: #313132;
+  margin-top: -2em; }
 
 /*# sourceMappingURL=index.css.map */

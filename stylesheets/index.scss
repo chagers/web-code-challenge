@@ -11,37 +11,80 @@ $btn-red: #EA431F;
 $small-screen-min: 0;
 $med-screen-min: 601px;
 $large-screen-min: 993px;
+$light-gray: #ECEBEB;
 
 
-body {
+html {
   font-family: $primary-font;
 }
 
 @media screen and (min-width: $small-screen-min) {
-  h1, h2, h3 {
+  html {
+    font-size: 14px;
+  }
+  h1 {
     font-size: 2em;
   }
-  .container {
-    width: 95%;
+  h2 {
+    font-size: 1.8em;
   }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  .footer-graphic {
+    float: left;
+    padding-bottom: .5em;
+  }
+
 }
 
 @media screen and (min-width: $med-screen-min) {
-  h1, h2 {
-    font-size: 3.2em;
+  html {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.8em;
   }
   h3 {
-    font-size: 2.5em;
+    font-size: 2.6em;
   }
-  .container {
-    width: 90%;
+  .footer-graphic {
+    float: right;
   }
 }
 
 @media screen and (min-width: $large-screen-min) {
-  .container {
-    width: 90%;
+  html  {
+    font-size: 18px;
   }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 3.1em;
+  }
+  h3 {
+    font-size: 2.7em;
+  }
+  .footer-graphic {
+    float: right;
+  }
+}
+
+.container {
+  width: 90%;
 }
 
 .btn {
@@ -70,18 +113,20 @@ nav {
     padding: $nav-foot-pad;
     width: 100%;
   }
+  .button-collapse {
+    margin-left: -4em;
+  }
 }
 
 .hero-image {
-  height: 30em;
-  background-image: url("../_assets/img/hero_edited.jpg");
-  background-size: contain;
-  margin-top: -6em;
-  width: 100%;
+  background-image: url("../_assets/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10em;
     .header-inset {
       position: relative;
       margin: 0 auto;
-      padding: 8em 0 0 5em;
+      padding: 12em 0 3em;
       color: #FFFFFF;
       font-family: $bold-font;
         .btn {
@@ -95,6 +140,12 @@ nav {
   input {
     width: 100%;
   }
+  input[type=text] {
+    background-color: $light-gray;
+    border-bottom-width: 0;
+    text-indent: 0.5em;
+    border-radius: 5px;
+  }
   label {
     font-weight: bold;
     color: #000000;
@@ -104,11 +155,13 @@ nav {
   }
   select {
     display: initial;
+    background-color: $light-gray;
+    color: #C7C7C7;
   }
   .btn {
     background-color: $btn-blue;
   }
-  .btn-red {
+  .advice-button {
     background-color: $btn-red;
   }
   span {
@@ -117,14 +170,43 @@ nav {
 }
 
 .about-us {
-  background-color: #ECEBEB;
+  background-color: $light-gray;
   width: 100%;
+  .btn-red {
+    background-color: $btn-red;
+  }
+  .about-btn {
+    padding-bottom: 4em;
+  }
+  h2 {
+    padding-top: 1em;
+  }
+  h6 {
+    padding-bottom: 1em;
+  }
+  p {
+    font-family: OpenSansLightItalic;
+  }
+  span {
+    font-family: OpenSansLight;
+  }
 }
 
 footer {
-  padding: $nav-foot-pad;
+  color: $light-gray;
+  padding-bottom: 1em;
+  address {
+    font-style: normal;
+  }
+  .copyright {
+    color: #595B5C;
+  }
+  .footer-graphic {
+    padding-top: 1em;
+  }
 }
 
 footer.page-footer {
   background-color: #313132;
+  margin-top: -2em;
 }
