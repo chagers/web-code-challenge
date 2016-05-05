@@ -1,8 +1,10 @@
 @import "_normalize.scss";
 
 $primary-font: OpenSansRegular;
-$bold-font: OpenSansSemibold;
 $logo-font: PacificoRegular;
+$bold-font: OpenSansSemibold;
+$italic-font: OpenSansLightItalic;
+$light-font: OpenSansLight;
 
 $small-screen-min: 0;
 $med-screen-min: 601px;
@@ -149,7 +151,7 @@ header {
   }
   .survey {
     width: 50%;
-    margin-top: 1.5em;
+    margin: 1.5em 0;
     @media screen and (min-width: $small-screen-min) {
       width: 100%;
     }
@@ -181,6 +183,57 @@ header {
     }
     span {
       padding: 1em;
+    }
+  }
+}
+
+.about-us-container {
+  margin: 0 -6%;
+  background-color: $light-gray;
+  overflow: hidden;
+  width: 112%;
+  text-align: center;
+}
+
+.about-us {
+  padding: 2em 0;
+  width: 90%;
+  margin: 0 auto;
+  .focused-phrase {
+    font-family: $light-font;
+  }
+  h3 {
+    font-family: $bold-font;
+  }
+  p {
+    font-family: $italic-font;
+  }
+  .about-cards-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  @media screen and (min-width: $small-screen-min) {
+    .direct-to-you, .pub-less, .peace-of-mind, .expert-advice {
+    width: 100%;
+    }
+  }
+  @media screen and (min-width: $med-screen-min) {
+    .direct-to-you, .pub-less, .peace-of-mind, .expert-advice {
+      width: 40%;
+      float: left;
+      padding: 1em;
+    }
+  }
+  @media screen and (min-width: $large-screen-min) {
+    .direct-to-you, .pub-less, .peace-of-mind, .expert-advice {
+      width: 20%;
+      float: left;
+      padding: 1em;
+    }
+    .about-btn {
+      clear: both;
+      width: 100%;
+      margin: 0 auto;
     }
   }
 }
