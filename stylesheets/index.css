@@ -364,6 +364,10 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/* FONT VARIABLES */
+/* SCREEN-SIZE VARIABLES */
+/* COLOR VARIABLES */
+/******************* GLOBAL SETTINGS *******************/
 html {
   font-family: OpenSansRegular; }
   @media screen and (min-width: 0) {
@@ -395,13 +399,14 @@ button {
 .btn-red {
   background-color: #EA431F; }
 
+/******************* HEADER *******************/
 header {
   height: 6em;
   width: 100%; }
   header nav {
     width: 100%;
     display: flex; }
-  header .nav-wrap {
+  header .nav-container {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
     display: inherit; }
@@ -410,9 +415,9 @@ header {
     padding-left: 5em;
     height: auto; }
     header .logo img {
-      min-width: 150px;
+      min-width: 50px;
       height: auto;
-      width: 50%; }
+      max-width: 80%; }
     @media screen and (min-width: 0) {
       header .logo ul {
         padding-left: 0; } }
@@ -460,47 +465,48 @@ header {
       .hero-image .header-inset {
         padding-left: 5em; } }
 
-.container {
+/******************* MAIN *******************/
+.main-container {
   width: 90%;
   margin: 22em auto 0; }
-  .container .welcome-msg, .container .survey {
+  .main-container .welcome-msg, .main-container .survey {
     float: left; }
-  .container .welcome-msg {
+  .main-container .welcome-msg {
     width: 50%; }
     @media screen and (min-width: 0) {
-      .container .welcome-msg {
+      .main-container .welcome-msg {
         width: 100%; } }
     @media screen and (min-width: 601px) {
-      .container .welcome-msg {
+      .main-container .welcome-msg {
         width: 50%; } }
-  .container .survey {
+  .main-container .survey {
     width: 50%;
     margin: 1.5em 0; }
     @media screen and (min-width: 0) {
-      .container .survey {
+      .main-container .survey {
         width: 100%; } }
     @media screen and (min-width: 601px) {
-      .container .survey {
+      .main-container .survey {
         display: inline-block;
         width: 50%; } }
-    .container .survey input {
+    .main-container .survey input {
       width: 100%; }
-    .container .survey input[type=text] {
+    .main-container .survey input[type=text] {
       background-color: #ECEBEB;
       border-bottom-width: 0;
       text-indent: 0.5em;
       border-radius: 5px; }
-    .container .survey label {
+    .main-container .survey label {
       font-weight: bold;
       color: #000000; }
-    .container .survey .beer-count {
+    .main-container .survey .beer-count {
       margin-top: 1em; }
-    .container .survey select {
+    .main-container .survey select {
       display: initial;
       background-color: #ECEBEB;
       color: #C7C7C7;
       width: 100%; }
-    .container .survey span {
+    .main-container .survey span {
       padding: 1em; }
 
 .about-us-container {
@@ -540,5 +546,37 @@ header {
       clear: both;
       width: 100%;
       margin: 0 auto; } }
+
+/******************* FOOTER *******************/
+footer {
+  margin-bottom: -10%; }
+  @media screen and (min-width: 0) {
+    footer .footer-container {
+      height: 10em; } }
+  @media screen and (min-width: 601px) {
+    footer .footer-container {
+      height: 6em; } }
+
+.footer-container {
+  background-color: #313132;
+  color: #ECEBEB;
+  padding: 2em 0;
+  width: 100%;
+  height: auto; }
+  .footer-container address, .footer-container .copyright {
+    text-align: center; }
+  .footer-container .footer-logo {
+    width: 7em;
+    margin: 0 auto; }
+  .footer-container img {
+    max-width: 100%;
+    height: auto; }
+  @media screen and (min-width: 601px) {
+    .footer-container .address-container {
+      padding-left: 5em;
+      float: left; }
+    .footer-container .footer-logo {
+      padding-right: 5em;
+      float: right; } }
 
 /*# sourceMappingURL=index.css.map */
