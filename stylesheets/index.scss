@@ -1,17 +1,13 @@
-/*Small screens are defined as having a max-width of 600px
-Medium screens are defined as having a max-width of 992px
-Large screen are defined as having a min-width of 993px*/
-
 $primary-font: OpenSansRegular;
 $bold-font: OpenSansSemibold;
-$logo-font: PacificoRegular;
-$nav-foot-pad: 1em 5em;
+
 $btn-blue: #1160AD;
 $btn-red: #EA431F;
+$light-gray: #ECEBEB;
+
 $small-screen-min: 0;
 $med-screen-min: 601px;
 $large-screen-min: 993px;
-$light-gray: #ECEBEB;
 
 
 html {
@@ -22,24 +18,12 @@ html {
   html {
     font-size: 14px;
   }
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.8em;
-  }
-  h3 {
-    font-size: 1.6em;
-  }
-  h4 {
-    font-size: 1.4em;
-  }
-  h5 {
-    font-size: 1.2em;
-  }
-  h6 {
-    font-size: 1em;
-  }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.8em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.4em; }
+  h5 { font-size: 1.2em; }
+  h6 { font-size: 1em; }
   .footer-graphic {
     float: left;
     padding-bottom: .5em;
@@ -51,15 +35,9 @@ html {
   html {
     font-size: 16px;
   }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2.8em;
-  }
-  h3 {
-    font-size: 2.6em;
-  }
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.8em; }
+  h3 { font-size: 2.6em; }
   .footer-graphic {
     float: right;
   }
@@ -69,15 +47,9 @@ html {
   html  {
     font-size: 18px;
   }
-  h1 {
-    font-size: 3.5em;
-  }
-  h2 {
-    font-size: 3.1em;
-  }
-  h3 {
-    font-size: 2.7em;
-  }
+  h1 { font-size: 3.5em; }
+  h2 { font-size: 3.1em; }
+  h3 { font-size: 2.7em; }
   .footer-graphic {
     float: right;
   }
@@ -96,10 +68,6 @@ html {
 nav {
   font-family: OpenSansLight;
   padding: 0;
-  .brand-logo {
-    font-family: $logo-font;
-    color: #000000;
-  }
   img {
     height: auto;
     width: 80%;
@@ -110,7 +78,7 @@ nav {
   .nav-wrapper {
     background-color: rgba(255, 255, 255, 0.6);
     height: 6em;
-    padding: $nav-foot-pad;
+    padding: 1em 5em;
     width: 100%;
   }
   .button-collapse {
