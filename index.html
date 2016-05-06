@@ -8,7 +8,6 @@
 
     <!-- Fonts -->
     <link href="_assets/fonts/open-sans/stylesheet.css" rel="stylesheet">
-    <link href="_assets/fonts/pacifico/stylesheet.css" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
@@ -60,18 +59,18 @@
         <section class="survey">
           <div class="fav-beer">
             <label for="fav_beer">What's your favorite beer?</label>
-            <input placeholder="Mac &amp; Jacks" id="fav_beer" type="text" class="validate flow-text">
+            <input placeholder="e.g. Mac &amp; Jacks" id="fav_beer" type="text">
           </div>
           <div class="beer-count">
             <label>How many times a week do you drink beer?</label>
-            <select>
+            <select id="beer_count">
               <option value="" disabled selected>Select an option</option>
               <option value="1">1-2</option>
               <option value="2">3-4</option>
               <option value="3">5+</option>
             </select>
           </div>
-          <button class="btn btn-red"><a>Get Advice</a></button><span></span><button class="btn btn-blue"><a>Get a Beer</a></button>
+          <button id="get-advice" class="btn btn-red"><a>Get Advice</a></button><span></span><button id="get-beer" class="btn btn-blue"><a>Get a Beer</a></button>
         </section>
         <div class="about-us-container">
           <section class="about-us">

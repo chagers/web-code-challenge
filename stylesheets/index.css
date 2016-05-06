@@ -1,3 +1,317 @@
+/* FONT VARIABLES */
+/* SCREEN-SIZE VARIABLES */
+/* COLOR VARIABLES */
+body {
+  font-family: OpenSansRegular; }
+  @media screen and (min-width: 0) {
+    body html {
+      font-size: 14px; } }
+  @media screen and (min-width: 601px) {
+    body html {
+      font-size: 16px; } }
+  @media screen and (min-width: 800px) {
+    body html {
+      font-size: 18px; } }
+
+*:focus {
+  outline: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+button {
+  border-radius: 25px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 2em;
+  border: 0;
+  padding: 0.5em 1.75em; }
+  button a {
+    font-size: 0.8em;
+    color: #FFFFFF; }
+
+.btn-blue {
+  background-color: #1160AD; }
+
+.btn-red {
+  background-color: #EA431F; }
+
+header {
+  height: 6em;
+  width: 100%;
+  z-index: 1; }
+  header nav {
+    width: 100%;
+    display: flex; }
+  header .nav-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: auto;
+    display: inherit; }
+  header .logo {
+    flex: 0 1 35%;
+    height: auto;
+    padding: 1em 0; }
+    header .logo img {
+      min-width: 100px;
+      height: auto;
+      max-width: 70%; }
+    @media screen and (min-width: 0) {
+      header .logo {
+        padding-left: 0;
+        margin: 0 auto; } }
+    @media screen and (min-width: 601px) {
+      header .logo {
+        padding-left: 0;
+        margin: 0 auto; } }
+    @media screen and (min-width: 800px) {
+      header .logo {
+        padding-left: 5em; } }
+  header .menu {
+    flex: 0 1 65%;
+    padding: 2em 5em 0;
+    text-align: right;
+    margin-top: -.1%;
+    z-index: 2; }
+    @media screen and (min-width: 0) {
+      header .menu {
+        display: none; } }
+    @media screen and (min-width: 601px) {
+      header .menu {
+        display: none; } }
+    @media screen and (min-width: 800px) {
+      header .menu {
+        padding: 2em 0;
+        display: inline;
+        /* menu animation inspiration from: http://tympanus.net/Development/CreativeLinkEffects/#cl-effect-1 */ }
+        header .menu a::before, header .menu a::after {
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+          -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+          transition: transform 0.3s, opacity 0.2s; }
+        header .menu a::before {
+          margin-right: 5px;
+          content: '[';
+          -webkit-transform: translateX(20px);
+          -moz-transform: translateX(20px);
+          transform: translateX(20px); }
+        header .menu a::after {
+          margin-left: 5px;
+          content: ']';
+          -webkit-transform: translateX(-20px);
+          -moz-transform: translateX(-20px);
+          transform: translateX(-20px); }
+        header .menu a:hover::before, header .menu a:hover::after {
+          opacity: 1;
+          -webkit-transform: translateX(0px);
+          -moz-transform: translateX(0px);
+          transform: translateX(0px); } }
+  header li {
+    list-style-type: none;
+    display: inline; }
+    @media screen and (min-width: 800px) {
+      header li {
+        font-size: .9em;
+        padding: 0.4em; } }
+    @media screen and (min-width: 1000px) {
+      header li {
+        padding: 1em;
+        font-size: 100%; } }
+  header .menu-icon {
+    z-index: 1; }
+    header .menu-icon img {
+      max-width: 100%;
+      height: auto; }
+    @media screen and (min-width: 0) {
+      header .menu-icon {
+        padding: 1.5em 1em; }
+        header .menu-icon img {
+          max-width: 80%; } }
+    @media screen and (min-width: 601px) {
+      header .menu-icon {
+        padding: 2em 3em; }
+        header .menu-icon img {
+          max-width: 100%; } }
+    @media screen and (min-width: 800px) {
+      header .menu-icon {
+        display: none; } }
+  header .rotate {
+    transform: rotate(90deg); }
+  header .nav-container .drop-down {
+    display: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    padding: 1em;
+    z-index: 2; }
+    header .nav-container .drop-down li {
+      display: block; }
+    @media screen and (min-width: 0) {
+      header .nav-container .drop-down {
+        top: 2em;
+        right: 2em; } }
+    @media screen and (min-width: 601px) {
+      header .nav-container .drop-down {
+        top: 3em;
+        right: 3.5em; } }
+    @media screen and (min-width: 800px) {
+      header .nav-container .drop-down {
+        display: none; } }
+  header .hero-image {
+    background-image: url("../_assets/img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10em; }
+    header .hero-image .header-inset {
+      position: relative;
+      margin: 0 auto;
+      padding: 12em 0 3em;
+      color: #FFFFFF;
+      font-family: OpenSansSemibold; }
+      @media screen and (min-width: 0) {
+        header .hero-image .header-inset {
+          padding-left: 1em; }
+          header .hero-image .header-inset .btn {
+            margin-top: 1em; } }
+      @media screen and (min-width: 601px) {
+        header .hero-image .header-inset {
+          padding-left: 5em; }
+          header .hero-image .header-inset .btn {
+            margin-top: 1em; } }
+
+.main-container {
+  width: 90%;
+  margin: 20em auto 0; }
+  .main-container .welcome-msg, .main-container .survey {
+    float: left; }
+  .main-container .welcome-msg {
+    width: 50%; }
+    @media screen and (min-width: 0) {
+      .main-container .welcome-msg {
+        width: 100%;
+        margin-top: -4em; } }
+    @media screen and (min-width: 601px) {
+      .main-container .welcome-msg {
+        width: 50%;
+        margin-top: 0; }
+        .main-container .welcome-msg p {
+          padding-right: 1.5em; } }
+    @media screen and (min-width: 800px) {
+      .main-container .welcome-msg p {
+        line-height: 1.5em;
+        letter-spacing: .01em;
+        padding-right: 4em; } }
+  .main-container .survey {
+    width: 50%;
+    margin: 1.5em 0; }
+    @media screen and (min-width: 0) {
+      .main-container .survey {
+        width: 100%; } }
+    @media screen and (min-width: 601px) {
+      .main-container .survey {
+        display: inline-block;
+        width: 50%;
+        line-height: 1.8em; }
+        .main-container .survey .beer-count {
+          padding-top: 2em; } }
+    .main-container .survey input {
+      width: 100%; }
+    .main-container .survey input[type=text] {
+      border: 0;
+      color: black;
+      background-color: #ECEBEB;
+      text-indent: 0.5em;
+      border-radius: 5px; }
+    .main-container .survey label {
+      font-weight: bold;
+      color: #000000; }
+    .main-container .survey .beer-count {
+      margin-top: 1em; }
+    .main-container .survey button {
+      margin-top: 3em; }
+    .main-container .survey select {
+      border: 0;
+      display: initial;
+      background-color: #ECEBEB;
+      color: #C7C7C7;
+      width: 100%; }
+    .main-container .survey span {
+      padding: 1em; }
+
+.about-us-container {
+  margin: 0 -6%;
+  background-color: #ECEBEB;
+  overflow: hidden;
+  width: 112%;
+  text-align: center; }
+
+.about-us {
+  padding: 2em 0;
+  width: 90%;
+  margin: 0 auto; }
+  .about-us .focused-phrase {
+    font-family: OpenSansLight; }
+  .about-us h3 {
+    font-family: OpenSansSemibold; }
+  .about-us p {
+    font-family: OpenSansLightItalic; }
+  .about-us .about-cards-container {
+    width: 80%;
+    margin: 0 auto; }
+  @media screen and (min-width: 0) {
+    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
+      width: 100%; } }
+  @media screen and (min-width: 601px) {
+    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
+      width: 40%;
+      float: left;
+      padding: 1em; } }
+  @media screen and (min-width: 800px) {
+    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
+      width: 20%;
+      float: left;
+      padding: 1em; }
+    .about-us .about-btn {
+      clear: both;
+      width: 100%;
+      margin: 0 auto; } }
+
+footer {
+  margin-bottom: -10%; }
+  @media screen and (min-width: 0) {
+    footer .footer-container {
+      height: 10em; }
+    footer .address-container {
+      padding-left: 1em; } }
+  @media screen and (min-width: 601px) {
+    footer .footer-container {
+      height: 6em; } }
+
+.footer-container {
+  background-color: #313132;
+  color: #ECEBEB;
+  padding: 2em 0;
+  width: 100%;
+  height: auto; }
+  .footer-container address, .footer-container .copyright {
+    text-align: left; }
+  .footer-container .copyright {
+    color: #595B5C; }
+  .footer-container .footer-logo {
+    width: 7em;
+    margin: 0 auto; }
+  .footer-container img {
+    max-width: 100%;
+    height: auto; }
+  @media screen and (min-width: 601px) {
+    .footer-container .address-container {
+      padding-left: 5em;
+      float: left; }
+    .footer-container .footer-logo {
+      padding-right: 5em;
+      float: right; } }
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -363,278 +677,5 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
-
-/* FONT VARIABLES */
-/* SCREEN-SIZE VARIABLES */
-/* COLOR VARIABLES */
-/******************* GLOBAL SETTINGS *******************/
-html {
-  font-family: OpenSansRegular; }
-  @media screen and (min-width: 0) {
-    html html {
-      font-size: 14px; } }
-  @media screen and (min-width: 601px) {
-    html html {
-      font-size: 16px; } }
-  @media screen and (min-width: 800px) {
-    html html {
-      font-size: 18px; } }
-
-*:focus {
-  outline: 0; }
-
-a {
-  text-decoration: none;
-  color: #000000; }
-
-button {
-  border-radius: 25px;
-  margin-top: 2em;
-  border: 0;
-  padding: 0.5em 1.75em; }
-  button a {
-    font-size: 0.8em;
-    color: #FFFFFF; }
-
-.btn-blue {
-  background-color: #1160AD; }
-
-.btn-red {
-  background-color: #EA431F; }
-
-/******************* HEADER *******************/
-header {
-  height: 6em;
-  width: 100%;
-  z-index: 1; }
-  header nav {
-    width: 100%;
-    display: flex; }
-  header .nav-container {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
-    height: auto;
-    display: inherit; }
-  header .logo {
-    flex: 0 1 35%;
-    height: auto;
-    padding: 1em 0; }
-    header .logo img {
-      min-width: 100px;
-      height: auto;
-      max-width: 70%; }
-    @media screen and (min-width: 0) {
-      header .logo {
-        padding-left: 0;
-        margin: 0 auto; } }
-    @media screen and (min-width: 601px) {
-      header .logo {
-        padding-left: 0;
-        margin: 0 auto; } }
-    @media screen and (min-width: 800px) {
-      header .logo {
-        padding-left: 5em; } }
-  header .menu {
-    flex: 0 1 65%;
-    padding: 2em 5em 0;
-    text-align: right;
-    margin-top: -.1%;
-    z-index: 2; }
-    @media screen and (min-width: 0) {
-      header .menu {
-        display: none; } }
-    @media screen and (min-width: 601px) {
-      header .menu {
-        display: none; } }
-    @media screen and (min-width: 800px) {
-      header .menu {
-        display: inline; } }
-  header li {
-    list-style-type: none;
-    display: inline-block; }
-    @media screen and (min-width: 800px) {
-      header li {
-        font-size: .9em;
-        padding: 0.4em; } }
-    @media screen and (min-width: 1000px) {
-      header li {
-        padding: 1em;
-        font-size: 100%; } }
-  header .menu-icon {
-    z-index: 1; }
-    header .menu-icon img {
-      max-width: 100%;
-      height: auto; }
-    @media screen and (min-width: 0) {
-      header .menu-icon {
-        padding: 1.5em 1em; }
-        header .menu-icon img {
-          max-width: 80%; } }
-    @media screen and (min-width: 601px) {
-      header .menu-icon {
-        padding: 2em 3em; }
-        header .menu-icon img {
-          max-width: 100%; } }
-    @media screen and (min-width: 800px) {
-      header .menu-icon {
-        display: none; } }
-
-.nav-container .drop-down {
-  display: none;
-  border: 0;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  padding: 1em;
-  z-index: 2; }
-  .nav-container .drop-down li {
-    display: block; }
-  @media screen and (min-width: 0) {
-    .nav-container .drop-down {
-      top: 2em;
-      right: 2em; } }
-  @media screen and (min-width: 601px) {
-    .nav-container .drop-down {
-      top: 3em;
-      right: 3.5em; } }
-  @media screen and (min-width: 800px) {
-    .nav-container .drop-down {
-      display: none; } }
-
-.hero-image {
-  background-image: url("../_assets/img/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -10em; }
-  .hero-image .header-inset {
-    position: relative;
-    margin: 0 auto;
-    padding: 12em 0 3em;
-    color: #FFFFFF;
-    font-family: OpenSansSemibold; }
-    @media screen and (min-width: 0) {
-      .hero-image .header-inset {
-        padding-left: 1em; } }
-    @media screen and (min-width: 601px) {
-      .hero-image .header-inset {
-        padding-left: 5em; } }
-
-/******************* MAIN *******************/
-.main-container {
-  width: 90%;
-  margin: 20em auto 0; }
-  .main-container .welcome-msg, .main-container .survey {
-    float: left; }
-  .main-container .welcome-msg {
-    width: 50%; }
-    @media screen and (min-width: 0) {
-      .main-container .welcome-msg {
-        width: 100%; } }
-    @media screen and (min-width: 601px) {
-      .main-container .welcome-msg {
-        width: 50%; } }
-  .main-container .survey {
-    width: 50%;
-    margin: 1.5em 0; }
-    @media screen and (min-width: 0) {
-      .main-container .survey {
-        width: 100%; } }
-    @media screen and (min-width: 601px) {
-      .main-container .survey {
-        display: inline-block;
-        width: 50%; } }
-    .main-container .survey input {
-      width: 100%; }
-    .main-container .survey input[type=text] {
-      background-color: #ECEBEB;
-      border-bottom-width: 0;
-      text-indent: 0.5em;
-      border-radius: 5px; }
-    .main-container .survey label {
-      font-weight: bold;
-      color: #000000; }
-    .main-container .survey .beer-count {
-      margin-top: 1em; }
-    .main-container .survey select {
-      display: initial;
-      background-color: #ECEBEB;
-      color: #C7C7C7;
-      width: 100%; }
-    .main-container .survey span {
-      padding: 1em; }
-
-.about-us-container {
-  margin: 0 -6%;
-  background-color: #ECEBEB;
-  overflow: hidden;
-  width: 112%;
-  text-align: center; }
-
-.about-us {
-  padding: 2em 0;
-  width: 90%;
-  margin: 0 auto; }
-  .about-us .focused-phrase {
-    font-family: OpenSansLight; }
-  .about-us h3 {
-    font-family: OpenSansSemibold; }
-  .about-us p {
-    font-family: OpenSansLightItalic; }
-  .about-us .about-cards-container {
-    width: 80%;
-    margin: 0 auto; }
-  @media screen and (min-width: 0) {
-    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
-      width: 100%; } }
-  @media screen and (min-width: 601px) {
-    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
-      width: 40%;
-      float: left;
-      padding: 1em; } }
-  @media screen and (min-width: 800px) {
-    .about-us .direct-to-you, .about-us .pub-less, .about-us .peace-of-mind, .about-us .expert-advice {
-      width: 20%;
-      float: left;
-      padding: 1em; }
-    .about-us .about-btn {
-      clear: both;
-      width: 100%;
-      margin: 0 auto; } }
-
-/******************* FOOTER *******************/
-footer {
-  margin-bottom: -10%; }
-  @media screen and (min-width: 0) {
-    footer .footer-container {
-      height: 10em; }
-    footer .address-container {
-      padding-left: 1em; } }
-  @media screen and (min-width: 601px) {
-    footer .footer-container {
-      height: 6em; } }
-
-.footer-container {
-  background-color: #313132;
-  color: #ECEBEB;
-  padding: 2em 0;
-  width: 100%;
-  height: auto; }
-  .footer-container address, .footer-container .copyright {
-    text-align: left; }
-  .footer-container .copyright {
-    color: #595B5C; }
-  .footer-container .footer-logo {
-    width: 7em;
-    margin: 0 auto; }
-  .footer-container img {
-    max-width: 100%;
-    height: auto; }
-  @media screen and (min-width: 601px) {
-    .footer-container .address-container {
-      padding-left: 5em;
-      float: left; }
-    .footer-container .footer-logo {
-      padding-right: 5em;
-      float: right; } }
 
 /*# sourceMappingURL=index.css.map */
